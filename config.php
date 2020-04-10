@@ -1,4 +1,4 @@
-<?
+<?php
 
 $config = [
     "DB_HOST" => "localhost",
