@@ -7,8 +7,6 @@
     <div class="container-fluid" id="form">
         <form action="" class="col-md-6">
             <h1>Créer mon compte</h1>
-
-            <form>
                 <div class="form-group">
                     <input type="text" name="pseudo" class="form-control" placeholder="Pseudo">
                 </div>
