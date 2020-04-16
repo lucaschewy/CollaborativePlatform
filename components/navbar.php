@@ -9,10 +9,10 @@
         <a class="nav-link" href="#">Annonces</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Mes annonces</a>
+        <a class="nav-link" href="advert-list.php">Mes annonces</a>
       </li>
       <li class="nav-item">
-        <a class="btn btn-primary" href="#">Ajouter une annonce</a>
+        <a class="btn btn-primary" href="advert-form.php">Ajouter une annonce</a>
       </li>
     </ul>
     <a href="" class="btn btn-warning">Deconnexion</a>
