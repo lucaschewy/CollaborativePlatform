@@ -1,5 +1,8 @@
 <?php
     require_once("components/header.php");
+    if(!isset($_SESSION["pseudo"])){
+        header("Location: login.php");
+    }
     require_once("components/navbar.php");
 ?>
 

@@ -1,5 +1,10 @@
 <?php
     require_once("components/header.php");
+
+    if(!isset($_SESSION["pseudo"])){
+        header("Location: register.php");
+    }
+    
     require_once("components/navbar.php");
 ?>
 

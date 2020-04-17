@@ -1,11 +1,15 @@
 <?php
-    require_once("components/header.php")
+    require_once("components/header.php");
+
+    if(isset($_SESSION["username"])){
+        header("Location: index.php");
+    }
 ?>
 
 <body>
     
     <div class="container-fluid" id="form">
-        <form action="" class="col-md-6">
+        <form action="functions/loginUser.php" class="col-md-6" method="post">
             <h1>Je me connecte</h1>
 
             <form>
