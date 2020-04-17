@@ -3,10 +3,11 @@
 require("../configs/config.php");
 require("../configs/database.php");
 
-$req = $db->prepare("SELECT * FROM user WHERE pseudo = :pseudo AND password = :password");
-$req->bindParam(":pseudo", $_POST["pseudo"]);
-$req->bindParam(":password", $_POST["password"]);
-$req->execute();
+$req = $dbh->prepare('SELECT * FROM user WHERE username = :pseudo AND password = :password');
+$req->execute(array(
+     'pseudo' => $_POST["pseudo"],
+     'password' => $_POST["password"],
+));
 
 $result = $req->fetch();
 
@@ -16,7 +17,7 @@ if(!$result){
 }
 else{
     session_start();
-    $_SESSION["pseudo"] = $result["pseudo"];
+    $_SESSION["pseudo"] = $result["username"];
     $_SESSION["id"] = $result["id"];
     header("Location: ../index.php");
 }

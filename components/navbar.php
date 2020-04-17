@@ -15,6 +15,6 @@
         <a class="btn btn-primary" href="advert-form.php">Ajouter une annonce</a>
       </li>
     </ul>
-    <a href="" class="btn btn-warning">Deconnexion</a>
+    <a href="functions/disconnect.php" class="btn btn-warning">Deconnexion</a>
   </div>
 </nav>
