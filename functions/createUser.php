@@ -19,6 +19,7 @@ $req->execute(array(
 session_start();
 
 $_SESSION["pseudo"] = $_POST["pseudo"];
+$_SESSION["id"] = $pdo->lastInsertId();
 
 header("Location: ../index.php");
 ?>

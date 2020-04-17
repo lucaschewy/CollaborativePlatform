@@ -13,7 +13,9 @@
                 <?php
                 require_once("configs/database.php");
 
-                $reponse = $dbh->query("SELECT * FROM advert");
+                $myID = $_SESSION['id'];
+
+                $reponse = $dbh->query("SELECT * FROM advert WHERE author_id=$myID");
                 while($donnees = $reponse->fetch()){
                     if($donnees['statut'] === 'active'){
                 ?>

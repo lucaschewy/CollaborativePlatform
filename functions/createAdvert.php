@@ -3,6 +3,9 @@
 require("../configs/config.php");
 require("../configs/database.php");
 
+session_start();
+
+
 $req = $dbh->prepare('INSERT INTO advert(title, description, localisation, author_id, statut, image_url) VALUES(:title, :description, :localisation, :author_id, :statut, :image_url)');
 $req->execute(array(
      'title' => $_POST["title"],
@@ -12,5 +15,7 @@ $req->execute(array(
      'statut' => 'active',
      'image_url' => $_POST["image"],
 ));
+
+header("Location: ../index.php");
 
 ?>

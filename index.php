@@ -26,7 +26,7 @@
                         </a>
                         <p class="card-text"><?php echo $donnees['description']; ?></p>
                         <p><small>par <?php echo $_SESSION["pseudo"]; ?> à <?php echo $donnees['localisation']; ?></small></p>
-                        <a href="" class="btn btn-primary">Go somewhere</a>
+                        <a href="advert-page.php?id=<?php echo $_SESSION["id"]; ?>" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>

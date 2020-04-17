@@ -9,7 +9,7 @@
         <a class="nav-link" href="advert-list.php">Annonces</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="advert-list.php">Mes annonces</a>
+        <a class="nav-link" href="my-advert-list.php">Mes annonces</a>
       </li>
       <li class="nav-item">
         <a class="btn btn-primary" href="advert-form.php">Ajouter une annonce</a>
