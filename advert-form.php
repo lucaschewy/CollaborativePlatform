@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-md-12">
             <h1>Ajouter une annonce</h1>
-            <form action="" class="form-group">
+            <form action="functions/createAdvert.php" class="form-group" method="post">
                 <div class="form-group">
                     <input type="text" name="title" class="form-control" placeholder="Entrez un titre">
                 </div>
