@@ -13,5 +13,4 @@ $req->execute(array(
      'image_url' => $_POST["image"],
 ));
 
-
 ?>

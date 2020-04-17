@@ -25,8 +25,8 @@
                             <h5 class="card-title"><?php echo $donnees['title']; ?></h5>
                         </a>
                         <p class="card-text"><?php echo $donnees['description']; ?></p>
-                        <p><small><?php echo $donnees['localisation']; ?></small></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p><small>par <?php echo $_SESSION["pseudo"]; ?> à <?php echo $donnees['localisation']; ?></small></p>
+                        <a href="" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
